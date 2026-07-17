@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Infinite Generators Infinite Types of Upgrades</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascmript file -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./notify.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+    <script type="module" src="/script.js" defer></script>
+  </head>
+  <body>
+    <center>
+      <h7>you have <span id="pts" style="font-size:30px">0</span> points (+<span id="pps"></span> points/s)</h7><br>
+      <button class="tab-0">Main</button><button class="tab-1">Achivements</button><button class="tab-2" hidden>Automation</button><button class="tab-69">Settings</button><br>
+    </center>
+    <div class="main"><center>
+      <button class="upgs upg0"><b>Generator</b><br>+<span id="upg0e">1</span> points/s<br>costs <span id="upg0c">1</span> points<br>owned: <span id="upg0">0</span></button>
+      <button class="upgs upg1p" hidden><b>real</b> (upg1^)<br>+0.01 point exponant<br>costs <span id="upg1pc">1000000</span> points<br>owned: <span id="upg1p">0</span></button><br>
+      <button class="upgs upg1" hidden><b>Generators booster</b> (upg1)<br>x<span id="upg1e">1.1</span> generators effect<br>costs <span id="upg1c">100</span> points<br>owned: <span id="upg1">0</span></button><br>
+      <button class="upgs upg2" hidden><b>Previous upgrade booster</b> (upg2)<br>x<span id="upg2e">1.05</span> upg1 effect<br>costs <span id="upg2c">1000</span> points<br>owned: <span id="upg2">0</span></button><br>
+      <button class="upgs upg3" hidden><b>Previous upgrade booster</b> (upg3)<br>x1.025 upg2 effect<br>costs <span id="upg3c">10000</span> points<br>owned: <span id="upg3">0</span></button><br>
+    </center></div>
+    <div class="settings" hidden><center>
+      <br>
+      notation: <select class="set-nt">
+        <option>Scientific</option>
+        <option>Standard</option>
+        <option>Logarithmic</option>
+        <option>YesNo</option>
+      </select><br>
+      <button class="set-ex">export</button><button class="set-im">import</button><button class="set-sv">save</button><button class="set-rs">HARD RESET</button><br>
+      <br>decimal precision: <span id="dp">-1</span> (some values are unaffected)<br><input type="range" min="0" max="50" value="2" class="dp-set">
+      <button class="set-rs_dp">reset to default</button>
+    </center></div>
+    <div class="achievements" hidden>
+      <b>(ID: 1) You gotta start somewhere</b>: buy a generator<br>
+      <b>(ID: 2) 100 points is "a lot"</b>: buy the 1st upgrade<br>
+      <b>(ID: 3) NEW UPGRADES??</b>: buy the 2nd upgrade<br>
+      <b>(ID: 4) MORE OF THEM??</b>: buy the 3rd upgrade<br>
+      <b>(ID: 5) somethings wrong here...</b>: buy the 4th upgrade<br>
+      <br>
+      <b>(ID: 11) finally! automation!</b>: unlock upg1 autobuyer<br>
+      more and MORE achievements will be implemented soon<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <b>(ID: 1i) how does imaginary numbers exist in incremental games?</b>: begin generation of imaginary points<br>
+      <b>(ID: 1j) wha-</b>: begin generation of super-imaginary points<br>
+      <b>(ID: e∞) THE HOLY INFINITYYYYYYYYY</b>: reach e∞ points (limit of my own BigNum library, ~e1.79e308)<br>
+    </div>
+    <div class="automation" hidden><center>
+      <div class="upg0auto">
+        Generator autobuyer<br>
+        <button class="upg0a_unlock">Unlock generator autobuyer<br><b>cost: 15000 points</b></button>
+        <button class="upg0a_intupg" hidden>35% smaller interval<br><b>cost: 25000 points</b></button><br>
+        <span class="upg0a_int" hidden>current: buy 1 every 0.6 seconds</span>
+      </div>
+    </center></div>
+  </body>
+</html>

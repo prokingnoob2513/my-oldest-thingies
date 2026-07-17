@@ -1,0 +1,23 @@
+html {
+  font-family: "Verdana"
+}
+
+button {
+  font-family: "Verdana"
+}
+
+.upgs {
+  width:fit-content
+}
+
+.upg0auto {
+  background-color: gray;
+  border: 4px solid #404040;
+  outline-style: solid;
+  width: 250px;
+  height: 250px
+}
+
+.upg0a_unlock {
+  width: 240px;
+}
